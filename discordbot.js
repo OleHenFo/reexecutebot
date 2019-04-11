@@ -8,9 +8,6 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('pong');
-  }
   if (msg.content.split(' ')[0] === '!play') {
     if (msg.member.voiceChannel) {
       msg.member.voiceChannel.join()
