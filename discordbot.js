@@ -17,6 +17,9 @@ client.on('message', msg => {
         .then(connection => {
           stream = ytdl(msg.content.split(' ')[1]);
           dispatcher = connection.playStream(stream);
+          dispatcher.on('end', () => {
+            connection.disconnect();
+          });
         })
         .catch(console.log);
     } else {
