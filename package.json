@@ -4,7 +4,8 @@
   "description": "multipurpose chat bot",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "title ReExecuteBot && node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/OleHenFo/reexecutebot/issues"
   },
-  "homepage": "https://github.com/OleHenFo/reexecutebot#readme"
+  "homepage": "https://github.com/OleHenFo/reexecutebot#readme",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
 }
