@@ -1,0 +1,25 @@
+{
+  "name": "reexecutebot",
+  "version": "1.0.0",
+  "description": "multipurpose chat bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OleHenFo/reexecutebot.git"
+  },
+  "keywords": [
+    "bot",
+    "discord",
+    "twitch",
+    "chat"
+  ],
+  "author": "Rekondo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OleHenFo/reexecutebot/issues"
+  },
+  "homepage": "https://github.com/OleHenFo/reexecutebot#readme"
+}
