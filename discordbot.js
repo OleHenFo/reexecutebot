@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const discordAuth = require('discord_auth.json');
+const discordAuth = require('./auth/discord_auth.json');
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -12,6 +12,9 @@ client.on('message', msg => {
   }
 });
 
-function init(){
-  client.login(discordAuth.token);
-}
+(function() {
+  module.exports.init = function() {
+    client.login(discordAuth.token);
+    return client;
+  }
+}());
